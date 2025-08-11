@@ -1,0 +1,66 @@
+﻿  DebugConsole.cpp
+  Object.cpp
+  ObjectFactory.cpp
+  ObjectManager.cpp
+  CameraComponent.cpp
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Core\Object\ObjectManager.cpp(9,44): warning C4267: '=': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Core\Object\ObjectManager.cpp(32,26): warning C4267: '+=': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Core\Object\ObjectManager.cpp(44,29): warning C4267: '-=': 'size_t'에서 'uint32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Components\CameraComponent.cpp(196,51): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CubeComponent.cpp
+  PrimitiveComponent.cpp
+  InputManager.cpp
+  GizmoComponent.cpp
+  SceneComponent.cpp
+  SphereComponent.cpp
+  TriangleComponent.cpp
+  WildEditor.cpp
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Editor\EditorWindow.h(9,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'Engine/Editor/WildEditor.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Core\json.hpp(273,43): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Engine/Editor/WildEditor.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Core\json.hpp(291,45): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Engine/Editor/WildEditor.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Core\json.hpp(293,43): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 'Engine/Editor/WildEditor.cpp'을(를) 컴파일하는 중)
+  
+  ConsoleWindow.cpp
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Editor\EditorWindow.h(9,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'Engine/Editor/Windows/ConsoleWindow.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Editor\Windows\ConsoleWindow.cpp(414,39): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ControlWindow.cpp
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Editor\EditorWindow.h(9,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'Engine/Editor/Windows/ControlWindow.cpp'을(를) 컴파일하는 중)
+  
+  PropertyWindow.cpp
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Editor\EditorWindow.h(9,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'Engine/Editor/Windows/PropertyWindow.cpp'을(를) 컴파일하는 중)
+  
+  StatWindow.cpp
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Editor\EditorWindow.h(9,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'Engine/Editor/Windows/StatWindow.cpp'을(를) 컴파일하는 중)
+  
+  URenderer.cpp
+  Scene.cpp
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Scene\Scene.cpp(131,54): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  EngineStatics.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_win32.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  main.cpp
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\Engine\Editor\EditorWindow.h(9,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Jungle\Desktop\WildEngine-main\WildEngine\main.cpp(143,28): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  WildEngine.vcxproj -> C:\Users\Jungle\Desktop\WildEngine-main\x64\Debug\WildEngine.exe

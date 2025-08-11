@@ -1,0 +1,118 @@
+#include "TransformGizmo.h"
+#include "GizmoArrowComponent.h"
+#include "Define.h"
+#include "GizmoCircleComponent.h"
+#include "Actors/Player.h"
+#include "GizmoRectangleComponent.h"
+#include "Engine/EditorEngine.h"
+#include "World/World.h"
+#include "Engine/FLoaderOBJ.h"
+
+ATransformGizmo::ATransformGizmo()
+{
+    static int a = 0;
+    UE_LOG(ELogLevel::Error, "Gizmo Created %d", a++);
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoTranslationX.obj");
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoTranslationY.obj");
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoTranslationZ.obj");
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoRotationX.obj");
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoRotationY.obj");
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoRotationZ.obj");
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoScaleX.obj");
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoScaleY.obj");
+    FManagerOBJ::CreateStaticMesh("Assets/GizmoScaleZ.obj");
+
+    SetRootComponent(
+        AddComponent<USceneComponent>(TEXT("RootSceneComponent"))
+    );
+
+    UGizmoArrowComponent* locationX = AddComponent<UGizmoArrowComponent>(TEXT("LocationX"));
+    locationX->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoTranslationX.obj"));
+	locationX->SetupAttachment(RootComponent);
+    locationX->SetGizmoType(UGizmoBaseComponent::ArrowX);
+	ArrowArr.Add(locationX);
+
+    UGizmoArrowComponent* locationY = AddComponent<UGizmoArrowComponent>(TEXT("LocationY"));
+    locationY->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoTranslationY.obj"));
+    locationY->SetupAttachment(RootComponent);
+    locationY->SetGizmoType(UGizmoBaseComponent::ArrowY);
+    ArrowArr.Add(locationY);
+
+    UGizmoArrowComponent* locationZ = AddComponent<UGizmoArrowComponent>(TEXT("LocationZ"));
+    locationZ->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoTranslationZ.obj"));
+    locationZ->SetupAttachment(RootComponent);
+    locationZ->SetGizmoType(UGizmoBaseComponent::ArrowZ);
+    ArrowArr.Add(locationZ);
+
+    UGizmoRectangleComponent* ScaleX = AddComponent<UGizmoRectangleComponent>(TEXT("ScaleX"));
+    ScaleX->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoScaleX.obj"));
+    ScaleX->SetupAttachment(RootComponent);
+    ScaleX->SetGizmoType(UGizmoBaseComponent::ScaleX);
+    RectangleArr.Add(ScaleX);
+
+    UGizmoRectangleComponent* ScaleY = AddComponent<UGizmoRectangleComponent>(TEXT("ScaleY"));
+    ScaleY->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoScaleY.obj"));
+    ScaleY->SetupAttachment(RootComponent);
+    ScaleY->SetGizmoType(UGizmoBaseComponent::ScaleY);
+    RectangleArr.Add(ScaleY);
+
+    UGizmoRectangleComponent* ScaleZ = AddComponent<UGizmoRectangleComponent>(TEXT("ScaleZ"));
+    ScaleZ->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoScaleZ.obj"));
+    ScaleZ->SetupAttachment(RootComponent);
+    ScaleZ->SetGizmoType(UGizmoBaseComponent::ScaleZ);
+    RectangleArr.Add(ScaleZ);
+
+    UGizmoCircleComponent* CircleX = AddComponent<UGizmoCircleComponent>(TEXT("CircleX"));
+    CircleX->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoRotationX.obj"));
+    CircleX->SetupAttachment(RootComponent);
+    CircleX->SetGizmoType(UGizmoBaseComponent::CircleX);
+    CircleArr.Add(CircleX);
+
+    UGizmoCircleComponent* CircleY = AddComponent<UGizmoCircleComponent>(TEXT("CircleY"));
+    CircleY->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoRotationY.obj"));
+    CircleY->SetupAttachment(RootComponent);
+    CircleY->SetGizmoType(UGizmoBaseComponent::CircleY);
+    CircleArr.Add(CircleY);
+
+    UGizmoCircleComponent* CircleZ = AddComponent<UGizmoCircleComponent>(TEXT("CircleZ"));
+    CircleZ->SetStaticMesh(FManagerOBJ::GetStaticMesh(L"Assets/GizmoRotationZ.obj"));
+    CircleZ->SetupAttachment(RootComponent);
+    CircleZ->SetGizmoType(UGizmoBaseComponent::CircleZ);
+    CircleArr.Add(CircleZ);
+}
+
+void ATransformGizmo::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+    // Editor 모드에서만 Tick.
+    if (GEngine->ActiveWorld->WorldType != EWorldType::Editor)
+    {
+        return;
+    }
+
+    UEditorEngine* Engine = Cast<UEditorEngine>(GEngine);
+    if (!Engine)
+    {
+        return;
+    }
+    
+    if (const AActor* PickedActor = Engine->GetSelectedActor())
+    {
+        SetActorLocation(PickedActor->GetActorLocation());
+        if (Engine->GetEditorPlayer()->GetCoordMode() == ECoordMode::CDM_LOCAL)
+        {
+            // TODO: 임시로 RootComponent의 정보로 사용
+            SetActorRotation(PickedActor->GetActorRotation());
+        }
+        else if (Engine->GetEditorPlayer()->GetCoordMode() == ECoordMode::CDM_WORLD)
+        {
+            SetActorRotation(FVector(0.0f, 0.0f, 0.0f));
+        }
+    }
+}
+
+void ATransformGizmo::Initialize(FEditorViewportClient* InViewport)
+{
+    AttachedViewport = InViewport;
+}

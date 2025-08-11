@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{23d55597-ad8b-42d8-9823-363604114a64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{ba0f7e85-d334-470a-8a7b-2577905c2764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core">
+      <UniqueIdentifier>{a022486d-6017-45ea-892d-d29938cc4fc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine">
+      <UniqueIdentifier>{f1f2a947-7cf7-4a2c-9d57-fd86e8632940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Math">
+      <UniqueIdentifier>{8a7cccea-8eb2-46c5-bb4b-690623ddfc5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Object">
+      <UniqueIdentifier>{4aae7b4b-e356-4bf7-b60f-4160396339da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Types">
+      <UniqueIdentifier>{50339565-3d52-4424-bbd5-3db19e10052f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Renderer">
+      <UniqueIdentifier>{8bd3b291-20a2-46a4-a2d4-75695d2f94b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Components">
+      <UniqueIdentifier>{c97f44da-9d41-45cc-a280-d939001a656f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Scene">
+      <UniqueIdentifier>{ccfffda4-2401-4ff4-b26d-970b5840a364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Editor">
+      <UniqueIdentifier>{5e51bb81-8d50-4eed-82a5-b76d43560b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Editor\Window">
+      <UniqueIdentifier>{6e820ed8-15f6-46f6-aa27-21d394b90f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Interface">
+      <UniqueIdentifier>{d1947a6d-7b40-42c0-8b44-9fdaa68915e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Font">
+      <UniqueIdentifier>{e0102012-7207-4b5a-a3f0-687a5b0de92b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Class">
+      <UniqueIdentifier>{3e48e044-df38-4a7d-aaaa-a9ba2c607992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Log">
+      <UniqueIdentifier>{dd1cc437-5a01-4058-bd10-a039c60b2e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Statics">
+      <UniqueIdentifier>{1b133652-913b-46f1-8701-39a9e4d340e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Input">
+      <UniqueIdentifier>{4cf0611d-5136-4074-92a4-02f1561b7b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\Interface">
+      <UniqueIdentifier>{2fc5c07b-ddef-48f0-ac7c-920349793f9d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Matrix.h">
+      <Filter>소스 파일\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Vector.h">
+      <Filter>소스 파일\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\URenderer.h">
+      <Filter>소스 파일\Engine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Types\Types.h">
+      <Filter>소스 파일\Core\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\Object.h">
+      <Filter>소스 파일\Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Components\CubeComponent.h">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Components\SceneComponent.h">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Components\SphereComponent.h">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scene\Scene.h">
+      <Filter>소스 파일\Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Components\CameraComponent.h">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Primitive.h">
+      <Filter>소스 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Components\PrimitiveComponent.h">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Components\TriangleComponent.h">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\EditorDesigner.h">
+      <Filter>소스 파일\Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\EditorWindow.h">
+      <Filter>소스 파일\Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\WildEditor.h">
+      <Filter>소스 파일\Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\ConsoleWindow.h">
+      <Filter>소스 파일\Engine\Editor\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\ControlWindow.h">
+      <Filter>소스 파일\Engine\Editor\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\PropertyWindow.h">
+      <Filter>소스 파일\Engine\Editor\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Editor\Windows\StatWindow.h">
+      <Filter>소스 파일\Engine\Editor\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Interface\ISwitchable.h">
+      <Filter>소스 파일\Core\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Font\RawFonts.h">
+      <Filter>소스 파일\Core\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Font\IconDefs.h">
+      <Filter>소스 파일\Core\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Interface\IScene.h">
+      <Filter>소스 파일\Core\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Class\Class.h">
+      <Filter>소스 파일\Core\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\DebugConsole.h">
+      <Filter>소스 파일\Core\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\ObjectFactory.h">
+      <Filter>소스 파일\Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Object\ObjectManager.h">
+      <Filter>소스 파일\Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Statics\EngineStatics.h">
+      <Filter>소스 파일\Engine\Statics</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Input\InputManager.h">
+      <Filter>소스 파일\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Interface\ISingleton.h">
+      <Filter>소스 파일\Core\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Components\GizmoComponent.h">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Gizmo.h">
+      <Filter>소스 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Types\CommonTypes.h">
+      <Filter>소스 파일\Core\Types</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\URenderer.cpp">
+      <Filter>소스 파일\Engine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scene\Scene.cpp">
+      <Filter>소스 파일\Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\CameraComponent.cpp">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\SphereComponent.cpp">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\TriangleComponent.cpp">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\WildEditor.cpp">
+      <Filter>소스 파일\Engine\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\ConsoleWindow.cpp">
+      <Filter>소스 파일\Engine\Editor\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\ControlWindow.cpp">
+      <Filter>소스 파일\Engine\Editor\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\PropertyWindow.cpp">
+      <Filter>소스 파일\Engine\Editor\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Editor\Windows\StatWindow.cpp">
+      <Filter>소스 파일\Engine\Editor\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\ObjectManager.cpp">
+      <Filter>소스 파일\Core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\ObjectFactory.cpp">
+      <Filter>소스 파일\Core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Object\Object.cpp">
+      <Filter>소스 파일\Core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Log\DebugConsole.cpp">
+      <Filter>소스 파일\Core\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Statics\EngineStatics.cpp">
+      <Filter>소스 파일\Engine\Statics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\PrimitiveComponent.cpp">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\CameraComponent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\CubeComponent.cpp">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\CubeComponent.cpp">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\SceneComponent.cpp">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Input\InputManager.cpp">
+      <Filter>소스 파일\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Components\GizmoComponent.cpp">
+      <Filter>소스 파일\Engine\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="ShaderW0.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

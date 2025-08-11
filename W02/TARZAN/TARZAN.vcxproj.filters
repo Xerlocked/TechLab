@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Framework">
+      <UniqueIdentifier>{9a213b19-89bf-4f9e-a27f-b66f5da68763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Framework\DirectXWrapper">
+      <UniqueIdentifier>{63833def-b160-4f3c-83ea-709b42e1f1e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Framework\Core">
+      <UniqueIdentifier>{704f9afa-8f0c-40b0-b10b-674ee84d0cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Math">
+      <UniqueIdentifier>{a581bc30-355f-4a47-ba81-59380652d813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Framework">
+      <UniqueIdentifier>{e735941c-f4a2-47be-96c0-aa66cdac2d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Framework\Core">
+      <UniqueIdentifier>{3eac0fe0-da59-46fb-877f-bc406903fe44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Framework\DirectXWrapper">
+      <UniqueIdentifier>{c869ec1b-46f8-472c-8282-98511315bd12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Math">
+      <UniqueIdentifier>{706658a1-ca8e-496f-ac6c-e44f88a26aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{3492a764-7518-4c73-a2f4-59a06b7b2c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Include">
+      <UniqueIdentifier>{aec81e03-3931-4ee5-b9b8-76177004370b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DirectXWrapper\CBuffer.cpp">
+      <Filter>소스 파일\Framework\DirectXWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DirectXWrapper\CGraphics.cpp">
+      <Filter>소스 파일\Framework\DirectXWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DirectXWrapper\CInputLayout.cpp">
+      <Filter>소스 파일\Framework\DirectXWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DirectXWrapper\CShader.cpp">
+      <Filter>소스 파일\Framework\DirectXWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\DirectXWrapper\CState.cpp">
+      <Filter>소스 파일\Framework\DirectXWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\AActor.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\CEngineStatics.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\CObjectMeta.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\CRenderer.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\UActorComponent.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\UObject.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\USceneComponent.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\FMatrix.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\FVector.cpp">
+      <Filter>소스 파일\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="UWorld.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\Time.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\Input.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\UPrimitiveComponent.cpp">
+      <Filter>소스 파일\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="USphereComponent.cpp">
+    </ClCompile>
+    <ClCompile Include="GuiController.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\UCameraComponent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\UCoordArrowComponent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\UCubeComponent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\UPlaneComponent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Core\UArrowComponent.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DirectXWrapper\CBuffer.h">
+      <Filter>헤더 파일\Framework\DirectXWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DirectXWrapper\CGraphics.h">
+      <Filter>헤더 파일\Framework\DirectXWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DirectXWrapper\CInputLayout.h">
+      <Filter>헤더 파일\Framework\DirectXWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DirectXWrapper\CShader.h">
+      <Filter>헤더 파일\Framework\DirectXWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\DirectXWrapper\CState.h">
+      <Filter>헤더 파일\Framework\DirectXWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\AActor.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\CEngineStatics.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\CObjectMeta.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\CRenderer.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\UActorComponent.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\UObject.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\USceneComponent.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FMatrix.h">
+      <Filter>헤더 파일\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FVector.h">
+      <Filter>헤더 파일\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="UWorld.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\Input.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\UPrimitiveComponent.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="USphereComponent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\Time.h">
+      <Filter>헤더 파일\Framework\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiController.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\UCameraComponent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\UCoordArrowComponent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\UCubeComponent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\UPlaneComponent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Core\UArrowComponent.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\json.hpp">
+      <Filter>헤더 파일\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shader.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ImGui\imgui.ini" />
+  </ItemGroup>
+</Project>

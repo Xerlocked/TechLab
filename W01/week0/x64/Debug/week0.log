@@ -1,0 +1,47 @@
+﻿  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_win32.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  main.cpp
+D:\air_hockey\week0\GameManager.h(25,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(25,55): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(49,40): warning C4552: '!=': 식의 결과가 사용되지 않습니다.
+D:\air_hockey\week0\main.cpp(966,20): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\air_hockey\week0\main.cpp(1760,59): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\air_hockey\week0\main.cpp(1762,52): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ParticleManager.cpp
+  SoundManager.cpp
+  SpriteAnimationManager.cpp
+D:\air_hockey\week0\SpriteAnimationManager.cpp(162,12): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\air_hockey\week0\SpriteAnimationManager.cpp(163,12): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TextureManager.cpp
+D:\air_hockey\week0\TextureManager.cpp(88,58): warning C4267: '인수': 'size_t'에서 'UINT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GameUI.cpp
+D:\air_hockey\week0\GameManager.h(25,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(25,55): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(49,40): warning C4552: '!=': 식의 결과가 사용되지 않습니다.
+D:\air_hockey\week0\UI\GameUI.cpp(28,87): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\air_hockey\week0\UI\GameUI.cpp(28,72): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MainUI.cpp
+D:\air_hockey\week0\GameManager.h(25,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(25,55): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(49,40): warning C4552: '!=': 식의 결과가 사용되지 않습니다.
+D:\air_hockey\week0\UI\MainUI.cpp(32,38): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\air_hockey\week0\UI\MainUI.cpp(32,26): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  PauseUI.cpp
+D:\air_hockey\week0\GameManager.h(25,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(25,55): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(49,40): warning C4552: '!=': 식의 결과가 사용되지 않습니다.
+  ResultUI.cpp
+D:\air_hockey\week0\GameManager.h(25,24): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(25,55): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+D:\air_hockey\week0\GameManager.h(49,40): warning C4552: '!=': 식의 결과가 사용되지 않습니다.
+D:\air_hockey\week0\UI\ResultUI.cpp(26,78): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\air_hockey\week0\UI\ResultUI.cpp(26,66): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  UIManager.cpp
+  코드를 생성하고 있습니다...
+  week0.vcxproj -> D:\air_hockey\x64\Debug\week0.exe
+  0개 파일이 복사되었습니다.
