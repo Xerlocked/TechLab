@@ -9,7 +9,7 @@ DirectX 게임 엔진
 - W02 : Scene, Texture, Rendering
 - W03 : StaticMesh
 - W04 : Game Jam2 - Brute Force Competition (50000 Apples)
-- W04+: PIE
+- W04P: PIE
 - W05 : Fog
 - W06 : Light
 - W07 : Shadow
